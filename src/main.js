@@ -16,10 +16,10 @@ form.addEventListener('submit', event => {
     (!name ? form.elements.name : form.elements.contact).focus();
     return;
   }
-  const text = `Здравствуйте! Хочу обсудить проект с K.V.A Media.\n\nИмя: ${name}\nКонтакт: ${contact}\nИнтересует: ${form.elements.interest.value}\nО проекте: ${form.elements.message.value.trim() || 'Расскажу на консультации'}\n\nЗаявка с сайта K.V.A Media Production`;
+  const text = `Здравствуйте! Кирилл, хочу обсудить проект.\n\nИмя: ${name}\nКонтакт: ${contact}\nИнтересует: ${form.elements.interest.value}\nО проекте: ${form.elements.message.value.trim() || 'Расскажу на консультации'}\n\nЗаявка с сайта Кирилла Штапакова`;
   preview.value = text;
-  document.querySelector('#email-send').href = `mailto:kvamedia63@gmail.com?subject=${encodeURIComponent('Заявка K.V.A — ' + form.elements.interest.value)}&body=${encodeURIComponent(text)}`;
-  status.textContent = 'Заявка готова. Выберите, как отправить её агентству.';
+  document.querySelector('#email-send').href = `mailto:kvamedia63@gmail.com?subject=${encodeURIComponent('Заявка с сайта — ' + form.elements.interest.value)}&body=${encodeURIComponent(text)}`;
+  status.textContent = 'Заявка готова. Выберите, как её отправить.';
   result.hidden = false;
   status.focus({preventScroll:true});
   result.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block:'nearest'});

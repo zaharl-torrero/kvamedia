@@ -1,4 +1,4 @@
-# K.V.A Media Production
+# Кирилл Штапаков — лендинг
 
 Лендинг агентства на основе https://vk.ru/kvamedia_prod. Vite, HTML/CSS/JS, локальные шрифты и материалы группы.
 

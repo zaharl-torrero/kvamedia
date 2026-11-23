@@ -1,4 +1,4 @@
-# K.V.A Media Production
+# Кирилл Штапаков — лендинг
 <!-- impeccable:product-schema 1 -->
 
 ## Platform
